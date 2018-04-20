@@ -60,7 +60,7 @@ public class TempTest {
     @Test
     public void testRandom() {
         for (int i = 0; i < 10; i++) {
-            System.out.println(RandomUtil.getRandomAllChar(43));
+            System.out.println(RandomUtil.getRandomAllChar(32));
         }
 
         System.out.println("Uno9IhHu3iwuishDCIMu8o4DVrKqVrFAToASYpKBQkY".length());
