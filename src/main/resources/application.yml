@@ -1,20 +1,20 @@
 spring:
   application:
-    name: wall-e
+    name: wechat-mp-helper
 ---
 server:
   address: 127.0.0.1
   port: 8888
 ---
 logging:
-  file: /data/logs/wall-e/wall-e.log
+  file: /data/logs/wechat-mp-helper/wechat-mp-helper.log
 ---
 spring:
   data:
     mongodb:
-      authentication-database: wall-e
-      database: wall-e
-      host: 112.74.169.188
+      authentication-database: wechat-mp-helper
+      database: wechat-mp-helper
+      host: 127.0.0.1
       port: 27017
-      username: wall-e
-      password: c1a0c3e60c9d11e8b9aa00163e02b6ed
+      username: wechat-mp-helper
+      password: e484db270b70439b93839c9ff91878ce

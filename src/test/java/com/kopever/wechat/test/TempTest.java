@@ -3,10 +3,12 @@ package com.kopever.wechat.test;
 import com.google.common.collect.Maps;
 import com.kopever.wechat.common.constant.enumerator.WechatMsgType;
 import com.kopever.wechat.common.util.Jackson;
+import com.kopever.wechat.common.util.RandomUtil;
 import com.kopever.wechat.test.domain.Foo;
 import org.junit.Test;
 
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Lullaby on 2018/1/17
@@ -46,6 +48,22 @@ public class TempTest {
 
         Foo foo1 = Jackson.fromJson(json, Foo.class);
         System.out.println(foo1.isSandbox());
+    }
+
+    @Test
+    public void testUUID() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(UUID.randomUUID().toString().replace("-", ""));
+        }
+    }
+
+    @Test
+    public void testRandom() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(RandomUtil.getRandomAllChar(43));
+        }
+
+        System.out.println("Uno9IhHu3iwuishDCIMu8o4DVrKqVrFAToASYpKBQkY".length());
     }
 
 }
